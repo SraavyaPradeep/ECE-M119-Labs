@@ -9,3 +9,10 @@ To run code:
 (1) Connect Arduino Nano 33 IoT & upload .ino file
 (2) Open terminal, move to the m3 directory. 
 (3) Enter 'node central.js'
+
+M4: 
+
+To run: 
+(1) clone the project
+(2) Download cors -- npm install cors
+(3) To start game -- node central.js
