@@ -1,11 +1,18 @@
+/*
+	What: Pong Game (originally one-player) using Node
+	Where: https://codepen.io/gdube/pen/JybxxZ
+	Why: I added my Arduino implementation to the game. Now this is a pong game that uses 2-Arduino devices to handle paddle movements.
+*/
+
 const noble = require('@abandonware/noble');
 var cors = require('cors')
 
+//Replace with Arduino's ID
 player1uuid = "e98909451bd60df2c0af684c4281ab2b";
 player2uuid = "9a593618ebed3379163555439109ad87";
 
 const uuid_service = ["2222", "1111"];
-const uuid_value = "2140";
+const uuid_value = "2103";
 
 let sensorValue1 = NaN;
 let sensorValue2 = NaN;
@@ -13,7 +20,7 @@ let sensorValue2 = NaN;
 noble.on('stateChange', async (state) => {
     if (state === 'poweredOn') {
         console.log("start scanning")
-         await noble.startScanningAsync(["2222"], false);
+         await noble.startScanningAsync(["1111"], false);
     }
 });
 
@@ -61,7 +68,7 @@ noble.on('discover', async (peripheral) => {
     }
     // if there is anything left, that has not been connected
     if (peripheralID1 == "" || peripheralID2 == ""){
-        await noble.startScanningAsync("1111", false);
+        await noble.startScanningAsync("2222", false);
     }
     
 });
