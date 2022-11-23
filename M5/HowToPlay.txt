@@ -1,0 +1,12 @@
+How To Run Program:
+
+Upload Device1 .ino code to Player 1's Arduino
+Upload Device2 .ino code to Player 2's Arduino
+
+To run the program, open the m5 folder and download the node_modules files by typing
+
+npm install cors
+
+Finally, to run the program type 
+
+node central.js
