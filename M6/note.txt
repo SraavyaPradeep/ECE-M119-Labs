@@ -1,0 +1,1 @@
+For this project, I am changing the sampling rate of my Arduino, and measuring the X-axis accelerometer measurement to analyze its affect on power consumption.
