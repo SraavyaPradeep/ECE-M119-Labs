@@ -74,7 +74,7 @@ void loop() {
 
     //delay(100); // SAMPLING RATE 1
 
-    //delay(2); // SAMPLING RATE 2
+    //delay(2000); // SAMPLING RATE 2
 
     accelerometerCharacteristicY.writeValue(y);
     accelerometerCharacteristicZ.writeValue(z);
